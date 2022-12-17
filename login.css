@@ -1,0 +1,58 @@
+  /* Default Value */
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Michroma", sans-serif;
+    font-family: "Prompt", sans-serif;
+  }
+
+  /* NavBar */
+  .navBar {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 12px;
+    text-transform: uppercase;
+  }
+
+  /* Container */
+  .container {
+    text-align: center;
+  }
+
+  /* Username & Password */
+  #username,
+  #password {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .fa-eye{
+    position: absolute;
+    color: black;
+    margin: 14px -27px;
+    cursor: pointer;
+  }
+
+  /* Login Button */
+  #login button {
+    background-color: black;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* Footer */
+  .copyright {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 12px;
+    text-transform: uppercase;
+  }

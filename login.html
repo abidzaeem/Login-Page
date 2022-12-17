@@ -4,70 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Kanit:wght@300&family=Michroma&family=Prompt&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <title>Login Page</title>
 
-    <!-- CSS Start -->
-    <style>
-      /* Default Value */
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: "Chakra Petch", sans-serif;
-        font-family: "Kanit", sans-serif;
-        font-family: "Michroma", sans-serif;
-        font-family: "Prompt", sans-serif;
-      }
-
-      /* NavBar */
-      .navBar {
-        display: flex;
-        background-color: black;
-        color: white;
-        justify-content: center;
-        padding: 12px;
-        text-transform: uppercase;
-      }
-
-      /* Container */
-      .container {
-        text-align: center;
-      }
-
-      /* Username & Password */
-      #username,
-      #password {
-        padding: 10px 20px;
-        border-radius: 10px;
-      }
-
-      /* Login Button */
-      #login button {
-        background-color: black;
-        color: white;
-        padding: 10px 35px;
-        border-radius: 10px;
-        cursor: pointer;
-      }
-
-      /* Footer */
-      .copyright {
-        display: flex;
-        background-color: black;
-        color: white;
-        justify-content: center;
-        padding: 12px;
-        text-transform: uppercase;
-      }
-    </style>
-    <!-- CSS End -->
   </head>
   <body>
     <header>
@@ -99,6 +46,7 @@
           <div id="password">
             <label for="password"></label>
             <input type="password" placeholder="Password" id="password" />
+            <i class="fa-solid fa-eye" id="show-password"></i>
           </div>
           <br />
 
@@ -116,5 +64,6 @@
         <p>© Copyright</p>
       </div>
     </footer>
+    <script src="login.js"></script>
   </body>
 </html>
