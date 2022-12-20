@@ -1,8 +1,15 @@
-const showPassword = document.querySelector("#show-password");
-const passwordField = document.querySelector("#password");
+const showPassword = document.querySelector("#showPassword");
+        const password = document.querySelector("#password");
 
-showPassword.addEventListener("click", function(){
-this.classList.toggle("fa-eye-slash");
-const type = passwordField.getAttribute("type") == "password" ? "text" : "password";
-passwordField.setAttribute("type", type)
-})
+        showPassword.addEventListener("click", function () {
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            this.classList.toggle("bi-eye");
+        });
+
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
